@@ -46,10 +46,17 @@ export const About = () => {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="relative"
           >
-            <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/20 to-primary/5 p-8 flex items-center justify-center">
+            <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&crop=face"
+                alt="Photo de profil"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-4 -right-4 bg-card/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg border border-border">
               <div className="text-center">
-                <div className="font-display text-7xl font-bold text-gradient mb-2">5+</div>
-                <div className="text-muted-foreground">Années d'expérience</div>
+                <div className="font-display text-3xl font-bold text-gradient">5+</div>
+                <div className="text-muted-foreground text-sm">Années d'exp.</div>
               </div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-2xl bg-primary/10 -z-10" />
